@@ -1,13 +1,16 @@
 /* 1. rafce */
 
 import { Link } from "react-router-dom";
+import ContainerAuth from "../components/layout/ContainerAuth";
 
 /* 2. regresar a App.jsx para renderizar */
 const Register = () => {
   return (
     /* 3. regresar de app.jsx para empezar a estilizar */
     /* 4. definir la fuente en tailwind.config */
-    <main className="font-urbanist min-h-screen bg-purple-bg text-white grid justify-stretch justify-items-center items-center bg-[url(/images/bg-auth-mobile.png)] bg-right-bottom bg-no-repeat gap-14 p-4 sm:grid-cols-[auto_auto] sm:justify-center sm:bg-[url(/images/bg-auth-desktop.png)]">
+    /* 6. regresar de ContainerAuth, borrar los estilos de main */
+    /* 7. llamar a ContainerAuth enves de main */
+    <ContainerAuth>
       <header className="hidden sm:block sm:max-w-[350px]">
         <img src="/images/register-header.png" alt="" />
       </header>
@@ -53,8 +56,8 @@ const Register = () => {
           Longin
         </Link>
       </form>
-    </main>
+    </ContainerAuth>
   );
 };
-/* go to ContainerAuth.jsx */
+/* 5. go to ContainerAuth.jsx */
 export default Register;
