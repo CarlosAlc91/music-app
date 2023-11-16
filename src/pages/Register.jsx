@@ -56,4 +56,5 @@ const Register = () => {
     </main>
   );
 };
+/* go to ContainerAuth.jsx */
 export default Register;
